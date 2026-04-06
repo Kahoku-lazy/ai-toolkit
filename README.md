@@ -42,6 +42,7 @@ cd ai-toolkit
 
 | Skill | 功能描述 | 使用场景 |
 |-------|----------|----------|
+| **frontend-slides** | 创建精美的 HTML 演示文稿 | 从零创建动画丰富的幻灯片；将 PPT 转换为网页；支持 12 种预设主题；零依赖单文件输出 |
 | **canvas-design** | 创建精美的 PNG/PDF 视觉作品 | 设计海报、艺术品、静态视觉内容；使用内置字体库 |
 | **algorithmic-art** | 使用 p5.js 创建算法艺术 | 生成艺术、代码艺术、流场、粒子系统；原创算法艺术创作 |
 | **frontend-design** | 创建高质量前端界面 | 构建网页组件、落地页、仪表盘、React 组件；避免通用 AI 审美 |
@@ -71,6 +72,58 @@ cd ai-toolkit
 |-------|----------|----------|
 | **skill-creator** | 创建和优化 Skill | 从零创建 skill、编辑优化现有 skill、运行评估测试、基准性能分析 |
 
+## 技能使用说明
+
+### frontend-slides 演示文稿制作
+
+**位置：** `Agent Skills/frontend-slides/`
+
+**功能：** 创建零依赖、动画丰富的 HTML 演示文稿，支持 12 种精美预设主题。
+
+**使用方法：**
+
+1. **激活技能** - AI 会自动读取 `Agent Skills/frontend-slides/SKILL.md`
+2. **选择模式** - 告诉 AI 你的需求：
+   - **新建演示文稿** - 从零创建
+   - **转换 PPT** - 将 `.pptx` 文件转换为 HTML
+   - **美化现有** - 改进已有的 HTML 演示文稿
+3. **提供内容** - 给 AI 你的文本内容、图片或主题
+4. **选择样式** - 从 12 种预设主题中选择（或让 AI 推荐）
+5. **生成并预览** - AI 生成单文件 HTML，直接在浏览器打开
+
+**12 种预设主题：**
+
+| 主题 | 风格 | 适用场景 |
+|------|------|----------|
+| **Bold Signal** | 自信大胆，现代高冲击 | 商业提案、产品发布 |
+| **Electric Studio** | 简洁专业，高对比 | 技术演讲、数据报告 |
+| **Creative Voltage** | 创意活力，复古现代 | 创意展示、设计提案 |
+| **Dark Botanical** | 优雅艺术，高端质感 | 艺术展示、高端品牌 |
+| **Notebook Tabs** | 编辑组织，优雅触感 | 教程、文档说明 |
+| **Pastel Geometry** | 友好现代，平易近人 | 教育、培训材料 |
+| **Split Pastel** | 活泼创意，友好 | 创意项目、团队介绍 |
+| **Vintage Editorial** | 机智自信，编辑风 | 写作、内容创作 |
+| **Neon Cyber** | 未来科技，自信 | 科技产品、开发者内容 |
+| **Terminal Green** | 开发者黑客风 | 技术文档、CLI 工具 |
+| **Swiss Modern** | 包豪斯精确风 | 设计展示、建筑 |
+| **Paper & Ink** | 文学编辑，深思熟虑 | 文学、出版内容 |
+
+**示例命令：**
+```bash
+# 使用技能创建演示文稿
+# 告诉 AI: "使用 frontend-slides 技能，将我的笔记做成 PPT"
+
+# 生成的 HTML 文件可以直接在浏览器打开
+start presentation.html
+```
+
+**输出特点：**
+- 单文件 HTML，无需构建工具
+- 响应式设计，适配各种屏幕
+- 键盘/触摸/滚轮导航
+- 动画效果丰富
+- 可部署到 Vercel 或导出为 PDF
+
 ## 快速开始
 
 ```bash
@@ -82,6 +135,7 @@ cd ai-toolkit
 
 # Agent Skills 位于
 # Agent Skills/Anthropics/skills/<skill-name>/
+# Agent Skills/frontend-slides/
 ```
 
 ## 贡献
