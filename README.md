@@ -16,6 +16,15 @@ git clone https://github.com/Kahoku-lazy/ai-toolkit.git
 cd ai-toolkit
 ```
 
+## 目录结构
+
+| 目录 | 说明 |
+|------|------|
+| `Agent/` | 存放子代理设定 |
+| `Agent Skills/` | 存放 Skills 技能 |
+| `Markdown/` | 存放定向业务、RAG 所需的相关文档 |
+| `Notes/` | 存放笔记文件 |
+
 ## 功能特性
 
 - 功能1：待添加
