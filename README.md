@@ -21,7 +21,9 @@ cd ai-toolkit
 | 目录 | 说明 |
 |------|------|
 | `Agent/` | 存放子代理设定 |
-| `Agent Skills/` | 存放 Skills 技能 |
+| `Agent Skills/` | 存放 Skills 技能（按功能分类） |
+| `Agent Skills/Anthropics/` | Anthropic 官方 Skills |
+| `Agent Skills/文档处理/` | 文档相关 Skills（docx、pptx、pdf 等） |
 | `Markdown/` | 存放定向业务、RAG 所需的相关文档 |
 | `Notes/` | 存放笔记文件 |
 
@@ -42,7 +44,6 @@ cd ai-toolkit
 
 | Skill | 功能描述 | 使用场景 |
 |-------|----------|----------|
-| **frontend-slides** | 创建精美的 HTML 演示文稿 | 从零创建动画丰富的幻灯片；将 PPT 转换为网页；支持 12 种预设主题；零依赖单文件输出 |
 | **canvas-design** | 创建精美的 PNG/PDF 视觉作品 | 设计海报、艺术品、静态视觉内容；使用内置字体库 |
 | **algorithmic-art** | 使用 p5.js 创建算法艺术 | 生成艺术、代码艺术、流场、粒子系统；原创算法艺术创作 |
 | **frontend-design** | 创建高质量前端界面 | 构建网页组件、落地页、仪表盘、React 组件；避免通用 AI 审美 |
@@ -72,11 +73,23 @@ cd ai-toolkit
 |-------|----------|----------|
 | **skill-creator** | 创建和优化 Skill | 从零创建 skill、编辑优化现有 skill、运行评估测试、基准性能分析 |
 
+---
+
+## 本地文档处理 Skills
+
+位于 `Agent Skills/文档处理/` 目录下，用于处理各类文档格式。
+
+| Skill | 功能描述 | 文件类型 | 来源 |
+|-------|----------|----------|------|
+| **frontend-slides** | 创建动画丰富的 HTML 演示文稿 | HTML/PPT | 社区 |
+
+> 💡 **计划添加**：docx、xlsx、pptx、XMind、pdf 等文档处理技能
+
 ## 技能使用说明
 
 ### frontend-slides 演示文稿制作
 
-**位置：** `Agent Skills/frontend-slides/`
+**位置：** `Agent Skills/文档处理/frontend-slides/`
 
 **功能：** 创建零依赖、动画丰富的 HTML 演示文稿，支持 12 种精美预设主题。
 
@@ -135,7 +148,7 @@ cd ai-toolkit
 
 # Agent Skills 位于
 # Agent Skills/Anthropics/skills/<skill-name>/
-# Agent Skills/frontend-slides/
+# Agent Skills/文档处理/<skill-name>/
 ```
 
 ## 贡献

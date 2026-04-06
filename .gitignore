@@ -24,3 +24,6 @@ logs/
 
 # 本地资源文件（不上传到 GitHub）
 Resources/
+
+# Qwen Code 本地配置
+.qwen/
