@@ -21,3 +21,6 @@ Thumbs.db
 # 日志
 *.log
 logs/
+
+# 本地资源文件（不上传到 GitHub）
+Resources/
